@@ -1,0 +1,22 @@
+{
+  "name": "tutorial",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier --write \"**/*.{astro,ts,mjs,cjs,json,md}\""
+  },
+  "dependencies": {
+    "astro": "2.1.9"
+  },
+  "devDependencies": {
+    "@nix6839/prettier-config": "1.0.8",
+    "@types/prettier": "2.7.2",
+    "prettier": "2.8.7",
+    "prettier-plugin-astro": "0.8.0"
+  }
+}
