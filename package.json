@@ -8,10 +8,10 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier --write \"**/*.{astro,ts,mjs,cjs,json,md}\""
+    "format": "prettier --write \"**/*.{astro,ts,cjs,json,md}\""
   },
   "dependencies": {
-    "astro": "2.1.9"
+    "astro": "2.2.0"
   },
   "devDependencies": {
     "@nix6839/prettier-config": "1.0.8",
