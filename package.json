@@ -11,7 +11,7 @@
     "format": "prettier --write \"**/*.{astro,ts,cjs,json,md}\""
   },
   "dependencies": {
-    "astro": "2.2.0"
+    "astro": "2.2.1"
   },
   "devDependencies": {
     "@nix6839/prettier-config": "1.0.8",
