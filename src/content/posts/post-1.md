@@ -1,6 +1,4 @@
 ---
-layout: '../../layouts/MarkdownPostLayout.astro'
-
 title: 'My First Blog Post'
 author: 'Astro Learner'
 pubDate: 2022-07-01

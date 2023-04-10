@@ -1,18 +1,10 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 
+import type { CollectionEntry } from 'astro:content';
+
 interface Props {
-  frontmatter: {
-    title: string;
-    author: string;
-    pubDate: string;
-    description: string;
-    image: {
-      url: string;
-      alt: string;
-    };
-    tags: string[];
-  };
+  frontmatter: CollectionEntry<'posts'>['data'];
 }
 
 const { frontmatter } = Astro.props;
@@ -21,7 +13,7 @@ const { frontmatter } = Astro.props;
 <BaseLayout pageTitle={frontmatter.title}>
   <div>
     <p><em>{frontmatter.description}</em></p>
-    <p>Published on: {frontmatter.pubDate.slice(0, 10)}</p>
+    <p>Published on: {frontmatter.pubDate.toLocaleString()}</p>
 
     <p>Written by {frontmatter.author}</p>
 

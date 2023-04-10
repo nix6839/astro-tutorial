@@ -1,8 +1,9 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
-const posts = await Astro.glob<{ tags: string[] }>('../posts/*.md');
-const uniqueTags = [...new Set(posts.flatMap((post) => post.frontmatter.tags))];
+const posts = await getCollection('posts');
+const uniqueTags = [...new Set(posts.flatMap((post) => post.data.tags))];
 
 const pageTitle = 'Tag Index';
 ---
