@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "@astrojs/rss": "2.3.2",
-    "astro": "2.2.1"
+    "@astrojs/solid-js": "2.1.0",
+    "astro": "2.2.1",
+    "solid-js": "1.7.3"
   },
   "devDependencies": {
     "@nix6839/prettier-config": "1.0.8",
